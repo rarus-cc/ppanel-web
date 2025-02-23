@@ -9,6 +9,10 @@
     "saveSuccess": "Başarıyla kaydedildi"
   },
   "site": {
+    "customHtml": "Özel HTML",
+    "customHtmlDescription": "Site'in <body> etiketinin altına yerleştirilecek özel HTML kodu.",
+    "keywords": "Anahtar Kelimeler",
+    "keywordsDescription": "SEO amaçları için kullanılır",
     "logo": "LOGO",
     "logoDescription": "LOGO'nun gösterilmesi gereken yeri belirtir",
     "logoPlaceholder": "Lütfen LOGO'nun URL adresini girin, '/' ile bitmemelidir",

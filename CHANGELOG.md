@@ -1,26 +1,64 @@
 <a name="readme-top"></a>
 # Changelog
 
-# [1.0.0-beta.15](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2025-02-21)
+# [1.0.0-beta.19](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.18...v1.0.0-beta.19) (2025-02-23)
+
+
+### ✨ Features
+
+* **form**: Make version field optional and set default value; update site domain placeholder for clarity ([42ba9e8](https://github.com/perfect-panel/ppanel-web/commit/42ba9e8))
 
 
 ### 🐛 Bug Fixes
 
-* **profile**: Restore filter to ensure only valid OAuth accounts are shown ([315c8f9](https://github.com/perfect-panel/ppanel-web/commit/315c8f9))
+* **auth**: Refactor forms to use Turnstile ref for reset functionality ([320a7dc](https://github.com/perfect-panel/ppanel-web/commit/320a7dc))
+
+# [1.0.0-beta.18](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.17...v1.0.0-beta.18) (2025-02-22)
+
+
+### ✨ Features
+
+* **platform**: Update platform naming and add keywords and custom HTML fields ([6384237](https://github.com/perfect-panel/ppanel-web/commit/6384237))
+* **site**: Added localization support for custom HTML and keyword fields ([f9d7736](https://github.com/perfect-panel/ppanel-web/commit/f9d7736))
+
+
+### 🐛 Bug Fixes
+
+* **locales**: Update custom HTML description for clarity across multiple languages ([557c5cd](https://github.com/perfect-panel/ppanel-web/commit/557c5cd))
+
+<a name="readme-top"></a>
+
+# Changelog
+
+# [1.0.0-beta.17](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2025-02-21)
+
+### 🐛 Bug Fixes
+
+- **auth**: Refactor reset password form to simplify code input and update placeholder text ([23833b4](https://github.com/perfect-panel/ppanel-web/commit/23833b4))
+
+# [1.0.0-beta.16](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2025-02-21)
+
+### 🐛 Bug Fixes
+
+- **auth**: Simplify email verification code input rendering ([6f7bc37](https://github.com/perfect-panel/ppanel-web/commit/6f7bc37))
+
+# [1.0.0-beta.15](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2025-02-21)
+
+### 🐛 Bug Fixes
+
+- **profile**: Restore filter to ensure only valid OAuth accounts are shown ([315c8f9](https://github.com/perfect-panel/ppanel-web/commit/315c8f9))
 
 # [1.0.0-beta.14](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2025-02-21)
 
-
 ### 🐛 Bug Fixes
 
-* **locales**: Fixed description in multilingual files, updated text related to email registration functionality ([c356bc2](https://github.com/perfect-panel/ppanel-web/commit/c356bc2))
+- **locales**: Fixed description in multilingual files, updated text related to email registration functionality ([c356bc2](https://github.com/perfect-panel/ppanel-web/commit/c356bc2))
 
 # [1.0.0-beta.13](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2025-02-21)
 
-
 ### 🐛 Bug Fixes
 
-* **api**: Fix type error in API request and add return URL parameter ([ee286dd](https://github.com/perfect-panel/ppanel-web/commit/ee286dd))
+- **api**: Fix type error in API request and add return URL parameter ([ee286dd](https://github.com/perfect-panel/ppanel-web/commit/ee286dd))
 
 <a name="readme-top"></a>
 

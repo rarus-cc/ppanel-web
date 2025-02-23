@@ -9,6 +9,10 @@
     "saveSuccess": "Guardado exitosamente"
   },
   "site": {
+    "customHtml": "HTML personalizado",
+    "customHtmlDescription": "Código HTML personalizado que se inyectará al final de la etiqueta <body> del sitio.",
+    "keywords": "Palabras clave",
+    "keywordsDescription": "Utilizado para propósitos de SEO",
     "logo": "LOGO",
     "logoDescription": "Usado para mostrar la ubicación donde se debe exhibir el LOGO",
     "logoPlaceholder": "Por favor, ingresa la URL del LOGO, no termines con '/'",
