@@ -8,9 +8,13 @@
     "currencyUnitDescription": "Usado apenas para exibição, após a alteração todas as unidades monetárias no sistema serão alteradas",
     "saveSuccess": "Salvo com sucesso"
   },
+  "privacy-policy": {
+    "saveSuccess": "Salvo com Sucesso",
+    "title": "Política de Privacidade"
+  },
   "site": {
     "customHtml": "HTML Personalizado",
-    "customHtmlDescription": "Código HTML personalizado a ser inserido no final da tag <body> do site.",
+    "customHtmlDescription": "Código HTML personalizado a ser inserido no final da tag bodyo site.",
     "keywords": "Palavras-chave",
     "keywordsDescription": "Usado para fins de SEO",
     "logo": "LOGO",

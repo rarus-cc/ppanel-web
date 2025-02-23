@@ -8,9 +8,13 @@
     "currencyUnitDescription": "Używane wyłącznie do celów wyświetlania, po zmianie wszystkie jednostki walutowe w systemie zostaną zmienione",
     "saveSuccess": "Zapisano pomyślnie"
   },
+  "privacy-policy": {
+    "saveSuccess": "Zapisano pomyślnie",
+    "title": "Polityka prywatności"
+  },
   "site": {
     "customHtml": "Niestandardowy HTML",
-    "customHtmlDescription": "Niestandardowy kod HTML, który ma być wstrzyknięty na końcu tagu <body> witryny.",
+    "customHtmlDescription": "Niestandardowy kod HTML, który ma być wstrzyknięty na końcu tagu bodyitryny.",
     "keywords": "Słowa kluczowe",
     "keywordsDescription": "Używane do celów SEO",
     "logo": "LOGO",
