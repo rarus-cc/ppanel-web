@@ -11,7 +11,7 @@ import {
 } from '@workspace/ui/components/select';
 import { Icon } from '@workspace/ui/custom-components/icon';
 import { getCountry } from '@workspace/ui/utils';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 
 const languages = {
@@ -43,7 +43,6 @@ const languages = {
 export default function LanguageSwitch() {
   const locale = useLocale();
   const country = getCountry(locale);
-  const t = useTranslations('language');
   const router = useRouter();
 
   const handleLanguageChange = (value: string) => {

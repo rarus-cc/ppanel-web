@@ -1,26 +1,56 @@
 <a name="readme-top"></a>
 # Changelog
 
-# [1.0.0-beta.22](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.21...v1.0.0-beta.22) (2025-02-23)
+# [1.0.0-beta.24](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.23...v1.0.0-beta.24) (2025-02-27)
 
 
-### 🐛 Bug Fixes
+### ♻ Code Refactoring
 
-* **locales**: Removed language file import to clean up unnecessary language support ([68f6ab2](https://github.com/perfect-panel/ppanel-web/commit/68f6ab2))
-
-# [1.0.0-beta.21](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2025-02-23)
+* **ui**: Optimize document display ([2ca2992](https://github.com/perfect-panel/ppanel-web/commit/2ca2992))
+* Reduce code complexity and improve readability ([e11f18c](https://github.com/perfect-panel/ppanel-web/commit/e11f18c))
 
 
 ### ✨ Features
 
-* **privacy-policy**: Add privacy policy related text and links ([baa68f0](https://github.com/perfect-panel/ppanel-web/commit/baa68f0))
+* **loading**: Add loading components and integrate them in Providers ([d5847fa](https://github.com/perfect-panel/ppanel-web/commit/d5847fa))
+
+
+### 🎫 Chores
+
+* **merge**: Add advertising module and device settings ([0130e02](https://github.com/perfect-panel/ppanel-web/commit/0130e02))
 
 
 ### 🐛 Bug Fixes
 
-* **locales**: Removed multilingual files to clean up unnecessary language support ([5b151cd](https://github.com/perfect-panel/ppanel-web/commit/5b151cd))
-* **locales**: Update custom HTML description in language file, ([87381da](https://github.com/perfect-panel/ppanel-web/commit/87381da))
-* **table**: Update privacy policy tab translation key and remove unnecessary requestType from OAuth callback ([14b3af5](https://github.com/perfect-panel/ppanel-web/commit/14b3af5))
+* **locales**: Order recharge related fields ([35210fe](https://github.com/perfect-panel/ppanel-web/commit/35210fe))
+
+<a name="readme-top"></a>
+
+# Changelog
+
+# [1.0.0-beta.23](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.22...v1.0.0-beta.23) (2025-02-24)
+
+### 🐛 Bug Fixes
+
+- **auth**: Update email verification logic to use domain suffix check ([62662bb](https://github.com/perfect-panel/ppanel-web/commit/62662bb))
+
+# [1.0.0-beta.22](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.21...v1.0.0-beta.22) (2025-02-23)
+
+### 🐛 Bug Fixes
+
+- **locales**: Removed language file import to clean up unnecessary language support ([68f6ab2](https://github.com/perfect-panel/ppanel-web/commit/68f6ab2))
+
+# [1.0.0-beta.21](https://github.com/perfect-panel/ppanel-web/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2025-02-23)
+
+### ✨ Features
+
+- **privacy-policy**: Add privacy policy related text and links ([baa68f0](https://github.com/perfect-panel/ppanel-web/commit/baa68f0))
+
+### 🐛 Bug Fixes
+
+- **locales**: Removed multilingual files to clean up unnecessary language support ([5b151cd](https://github.com/perfect-panel/ppanel-web/commit/5b151cd))
+- **locales**: Update custom HTML description in language file, ([87381da](https://github.com/perfect-panel/ppanel-web/commit/87381da))
+- **table**: Update privacy policy tab translation key and remove unnecessary requestType from OAuth callback ([14b3af5](https://github.com/perfect-panel/ppanel-web/commit/14b3af5))
 
 <a name="readme-top"></a>
 

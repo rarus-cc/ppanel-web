@@ -2,6 +2,7 @@
 
 // API 更新时间：
 // API 唯一标识：
+import * as ads from './ads';
 import * as announcement from './announcement';
 import * as authMethod from './authMethod';
 import * as console from './console';
@@ -17,6 +18,7 @@ import * as ticket from './ticket';
 import * as tool from './tool';
 import * as user from './user';
 export default {
+  ads,
   announcement,
   authMethod,
   console,
