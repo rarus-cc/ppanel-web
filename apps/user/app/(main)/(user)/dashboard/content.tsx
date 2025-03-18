@@ -32,8 +32,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@workspace/ui/componen
 import { Separator } from '@workspace/ui/components/separator';
 import { Tabs, TabsList, TabsTrigger } from '@workspace/ui/components/tabs';
 import { Icon } from '@workspace/ui/custom-components/icon';
-import { isBrowser } from '@workspace/ui/utils';
-import { differenceInDays } from 'date-fns';
+import { differenceInDays, formatDate, isBrowser } from '@workspace/ui/utils';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -58,7 +57,11 @@ export default function Content() {
 
   const [protocol, setProtocol] = useState('');
 
-  const { data: userSubscribe = [], refetch } = useQuery({
+  const {
+    data: userSubscribe = [],
+    refetch,
+    isLoading,
+  } = useQuery({
     queryKey: ['queryUserSubscribe'],
     queryFn: async () => {
       const { data } = await queryUserSubscribe();
@@ -89,10 +92,27 @@ export default function Content() {
     <>
       {userSubscribe.length ? (
         <>
-          <h2 className='flex items-center gap-1.5 font-semibold'>
-            <Icon icon='uil:servers' className='size-5' />
-            {t('mySubscriptions')}
-          </h2>
+          <div className='flex items-center justify-between'>
+            <h2 className='flex items-center gap-1.5 font-semibold'>
+              <Icon icon='uil:servers' className='size-5' />
+              {t('mySubscriptions')}
+            </h2>
+            <div className='flex gap-2'>
+              <Button
+                size='sm'
+                variant='outline'
+                onClick={() => {
+                  refetch();
+                }}
+                className={isLoading ? 'animate-pulse' : ''}
+              >
+                <Icon icon='uil:sync' />
+              </Button>
+              <Button size='sm' asChild>
+                <Link href='/subscribe'>{t('purchaseSubscription')}</Link>
+              </Button>
+            </div>
+          </div>
           <div className='flex flex-wrap justify-between gap-4'>
             <Tabs
               value={platform}
@@ -142,7 +162,10 @@ export default function Content() {
           {userSubscribe.map((item) => (
             <Card key={item.id}>
               <CardHeader className='flex flex-row flex-wrap items-center justify-between gap-2 space-y-0'>
-                <CardTitle className='font-medium'>{item.subscribe.name}</CardTitle>
+                <CardTitle className='font-medium'>
+                  {item.subscribe.name}
+                  <p className='text-foreground/50 mt-1 text-sm'>{formatDate(item.start_time)}</p>
+                </CardTitle>
                 <div className='flex flex-wrap gap-2'>
                   <AlertDialog>
                     <AlertDialogTrigger asChild>
@@ -201,12 +224,13 @@ export default function Content() {
                     <span className='text-2xl font-semibold'>
                       {item.reset_time
                         ? differenceInDays(new Date(item.reset_time), new Date())
-                        : t('unknown')}
+                        : t('noReset')}
                     </span>
                   </li>
                   <li>
                     <span className='text-muted-foreground'>{t('expirationDays')}</span>
                     <span className='text-2xl font-semibold'>
+                      {}
                       {item.expire_time
                         ? differenceInDays(new Date(item.expire_time), new Date()) || t('unknown')
                         : t('noLimit')}
