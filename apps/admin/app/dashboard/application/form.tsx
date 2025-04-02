@@ -232,16 +232,6 @@ export default function SubscribeAppForm<
                                     name: 'is_default',
                                     type: 'boolean',
                                     placeholder: t('defaultVersion'),
-                                    calculateValue: (value) => {
-                                      const newField = field.value?.map((item) => {
-                                        if (item.is_default) {
-                                          item.is_default = false;
-                                        }
-                                        return item;
-                                      });
-                                      form.setValue(field.name, newField);
-                                      return value;
-                                    },
                                   },
                                   {
                                     name: 'url',
@@ -252,10 +242,32 @@ export default function SubscribeAppForm<
                                 ]}
                                 value={field.value}
                                 onChange={(value) => {
-                                  form.setValue(
-                                    field.name,
-                                    value.filter((item) => item.url),
+                                  const filteredValue = value.filter((item) => item.url);
+
+                                  const newDefaultIndex = value.findIndex(
+                                    (item, idx) =>
+                                      item.is_default &&
+                                      (!field.value?.[idx] || !field.value[idx].is_default),
                                   );
+
+                                  let finalValue = filteredValue;
+
+                                  if (newDefaultIndex >= 0 && filteredValue[newDefaultIndex]) {
+                                    finalValue = filteredValue.map((item, index) => ({
+                                      ...item,
+                                      is_default: index === newDefaultIndex,
+                                    }));
+                                  } else if (
+                                    !filteredValue.some((item) => item.is_default) &&
+                                    filteredValue.length > 0
+                                  ) {
+                                    finalValue = filteredValue.map((item, index) => ({
+                                      ...item,
+                                      is_default: index === 0,
+                                    }));
+                                  }
+
+                                  form.setValue(field.name, finalValue as any);
                                 }}
                               />
                             </FormControl>
